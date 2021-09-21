@@ -1,0 +1,223 @@
+*,*::before,*::after{
+    box-sizing:border-box;
+}
+/* body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+} */
+.icons{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: relative;
+    text-align: center;
+    top:0;
+    
+
+    
+}
+.avatar1{
+    width: 100px;
+    margin:20px 10px 0;
+    height: 100px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-image: url('./melk.jpg');
+
+}
+.avatar1::after,
+.avatar1::before{
+    --scale:0;
+    --tooltip-color :#4267b2; 
+    --arrow-size:10px;
+    max-width: 100%;
+    position: absolute;
+    top: 0.25em;
+    text-align: center;
+    left:5px;
+    transform: translateX(0%) translateY(var(--translate-y,0) )scale(var(--scale));
+    transition: 150ms transform;
+    transform-origin: top center;
+}
+.avatar1::before{
+    --translate-y:calc(350% - var(--arrow-size));
+    content: attr(data-tooltip);
+    padding: .5rem;
+    width: max-content;
+    max-width: 100%;
+    background: var(--tooltip-color);
+    color:white;
+    border-radius: .3rem;
+    text-align: center;
+}
+.avatar1:hover:before,
+.avatar1:hover:after{
+    --scale:1;
+
+}
+.avatar1::after{
+    --translate-y:calc(-1 * var(--arrow-size));
+    content: '';
+    margin-left: 35px;
+    margin-top:101px;
+    border:var(--arrow-size) solid transparent ;
+    border-bottom-color: var(--tooltip-color);
+    transform-origin: bottom center;
+}
+.avatar2{
+    width: 100px;
+    margin:20px 10px 0;
+    height: 100px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-image: url('./melk.jpg');
+
+}
+.avatar2::after,
+.avatar2::before{
+    --scale:0;
+    --tooltip-color :#4267b2; 
+    --arrow-size:10px;
+    max-width: 100%;;
+    position: absolute;
+    top: 0.25em;
+    text-align: center;
+    left:5px;
+    transform: translateX(0%) translateY(var(--translate-y,0) )scale(var(--scale));
+    transition: 150ms transform;
+    transform-origin: top center;
+}
+.avatar2::before{
+    --translate-y:calc(350% - var(--arrow-size));
+    content: attr(data-tooltip);
+    padding: .5rem;
+    width: max-content;
+    background: var(--tooltip-color);
+    color:white;
+    border-radius: .3rem;
+    text-align: center;
+}
+.avatar2:hover:before,
+.avatar2:hover:after{
+    --scale:1;
+
+}
+.avatar2::after{
+    --translate-y:calc(-1 * var(--arrow-size));
+    content: '';
+    margin-left: 35px;
+    margin-top:101px;
+    border:var(--arrow-size) solid transparent ;
+    border-bottom-color: var(--tooltip-color);
+    transform-origin: bottom center;
+}
+
+.avatar3{
+    width: 100px;
+    margin:20px 10px 0;
+    height: 100px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-image: url('./melk.jpg');
+
+}
+.avatar3::after,
+.avatar3::before{
+    --scale:0;
+    --tooltip-color :#4267b2; 
+    --arrow-size:10px;
+    max-width: 100%;;
+    position: absolute;
+    top: 0.25em;
+    text-align: center;
+    left:5px;
+    transform: translateX(0%) translateY(var(--translate-y,0) )scale(var(--scale));
+    transition: 150ms transform;
+    transform-origin: top center;
+}
+.avatar3::before{
+    --translate-y:calc(350% - var(--arrow-size));
+    content: attr(data-tooltip);
+    padding: .5rem;
+    width: max-content;
+    background: var(--tooltip-color);
+    color:white;
+    border-radius: .3rem;
+    text-align: center;
+}
+.avatar3:hover:before,
+.avatar3:hover:after{
+    --scale:1;
+
+}
+.avatar3::after{
+    --translate-y:calc(-1 * var(--arrow-size));
+    content: '';
+    margin-left: 35px;
+    margin-top:101px;
+    border:var(--arrow-size) solid transparent ;
+    border-bottom-color: var(--tooltip-color);
+    transform-origin: bottom center;
+}
+.avatar4{
+    width: 100px;
+    margin:20px 10px 0;
+    height: 100px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-image: url('./melk.jpg');
+
+}
+.avatar4::after,
+.avatar4::before{
+    --scale:0;
+    --tooltip-color :#4267b2; 
+    --arrow-size:10px;
+    max-width: 100%;;
+    position: absolute;
+    top: 0.25em;
+    text-align: center;
+    left:5px;
+    transform: translateX(0%) translateY(var(--translate-y,0) )scale(var(--scale));
+    transition: 150ms transform;
+    transform-origin: top center;
+}
+.avatar4::before{
+    --translate-y:calc(350% - var(--arrow-size));
+    content: attr(data-tooltip);
+    padding: .5rem;
+    width: max-content;
+    background: var(--tooltip-color);
+    color:white;
+    border-radius: .3rem;
+    text-align: center;
+}
+.avatar4:hover:before,
+.avatar4:hover:after{
+    --scale:1;
+
+}
+.avatar4::after{
+    --translate-y:calc(-1 * var(--arrow-size));
+    content: '';
+    margin-left: 35px;
+    margin-top:101px;
+    border:var(--arrow-size) solid transparent ;
+    border-bottom-color: var(--tooltip-color);
+    transform-origin: bottom center;
+}
+
+
+
+
